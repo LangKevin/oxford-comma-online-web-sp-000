@@ -1,8 +1,6 @@
 def oxford_comma(array)
   if array.size == 1
     return array[0]
-  elsif (array.size == 2)
-    return array.to_s
   elsif array.size > 1
     cnt = 0
     myArr = Array.new
@@ -14,8 +12,6 @@ def oxford_comma(array)
         myStr = myStr + "and " + item
       end
       cnt += 1
-      # myArr.push(item)
-
     end
     return myStr
   else
