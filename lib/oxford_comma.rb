@@ -6,6 +6,9 @@ def oxford_comma(array)
     myArr = Array.new
     myStr = ""
     array.each do |item|
+      if array.size == 2
+        cnt += 1
+      end  
       if cnt < array.size - 1
         myStr = "" + myStr + item + ", "
       elsif
