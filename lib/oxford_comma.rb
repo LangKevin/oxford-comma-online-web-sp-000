@@ -7,7 +7,10 @@ def oxford_comma(array)
     myStr = ""
     array.each do |item|
       if cnt < array.size - 1
-        myStr = "" + myStr + item + ", "
+        if array.size == 2
+          myStr = "" + myStr + item
+        else
+          myStr = "" + myStr + item + ", "
       elsif
         myStr = myStr + "and " + item
       end
