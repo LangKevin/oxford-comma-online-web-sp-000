@@ -7,7 +7,7 @@ def oxford_comma(array)
     myStr = ""
     array.each do |item|
       if array.size == 2
-        myStr = item 
+        myStr = item
         cnt = 2
       end
       if cnt < array.size - 1
