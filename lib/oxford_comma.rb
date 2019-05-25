@@ -8,7 +8,7 @@ def oxford_comma(array)
     array.each do |item|
       if cnt < array.size - 1
         if array.size == 2
-          myStr = "" + myStr + item
+          myStr = "" + myStr + item + " "
         else
           myStr = "" + myStr + item + ", "
         end  
