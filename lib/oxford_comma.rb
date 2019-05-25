@@ -11,7 +11,7 @@ def oxford_comma(array)
           myStr = "" + myStr + item + " "
         else
           myStr = "" + myStr + item + ", "
-        end  
+        end
       elsif
         myStr = myStr + "and " + item
       end
