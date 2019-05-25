@@ -9,14 +9,13 @@ def oxford_comma(array)
       if (array.size == 2) && (cnt == 0)
         myStr = item
         cnt = 2
-      end else
-        if cnt < array.size - 1
-          myStr = "" + myStr + item + ", "
-        elsif
-          myStr = myStr + "and " + item
-        end
-        cnt += 1
-      
+      end
+      if cnt < array.size - 1
+        myStr = "" + myStr + item + ", "
+      elsif
+        myStr = myStr + "and " + item
+      end
+      cnt += 1
     end
     return myStr
   else
